@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>保險服務 | 富邦銀行</title>
+  <link rel="stylesheet" href="../../../../css/main.css">
+  <style>
+    .page-header { position: relative; padding: var(--spacing-15) 0 var(--spacing-10); background: linear-gradient(135deg, #5856D6 0%, #AF52DE 100%); color: var(--white); text-align: center; overflow: hidden; }
+    .page-header-bg { position: absolute; inset: 0; opacity: 0.15; }
+    .page-header-bg img { width: 100%; height: 100%; object-fit: cover; }
+    .insurance-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-8); padding: var(--spacing-12) 0; }
+    .insurance-card { background: var(--white); border-radius: var(--radius-2xl); padding: var(--spacing-10); box-shadow: var(--shadow-md); transition: all var(--transition-normal); }
+    .insurance-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
+    .insurance-icon { width: 64px; height: 64px; border-radius: var(--radius-xl); background: linear-gradient(135deg, #5856D6 0%, #AF52DE 100%); display: flex; align-items: center; justify-content: center; font-size: 32px; margin-bottom: var(--spacing-6); }
+    .insurance-title { font-size: var(--font-title-3); font-weight: var(--font-weight-bold); margin-bottom: var(--spacing-3); }
+    .insurance-desc { font-size: var(--font-callout); color: var(--gray-primary); margin-bottom: var(--spacing-6); }
+    @media (max-width: 1023px) { .insurance-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 734px) { .insurance-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../../../../" class="navbar-logo">
+        <img src="../../../../images/logo/fubon-logo.svg" alt="富邦銀行" height="40">
+        <span>富邦銀行</span>
+      </a>
+      <div class="navbar-menu">
+        <a href="../../../" class="navbar-link" style="opacity:1;color:var(--fubon-orange)">個人銀行</a>
+        <a href="../../commercial/" class="navbar-link">商業銀行</a>
+        <a href="../../wealth/" class="navbar-link">財富管理</a>
+        <a href="../../ebanking/" class="navbar-link">電子銀行</a>
+        <a href="../../about/" class="navbar-link">關於我們</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="#" class="btn btn-primary btn-small">網上銀行</a>
+        <button class="navbar-toggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="page-header-bg">
+      <img src="../../../../images/products/insurance.jpg" alt="保險服務" loading="lazy">
+    </div>
+    <div class="container">
+      <h1 class="page-title">保險服務</h1>
+      <p class="page-subtitle">全面保障您和家人的未來</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="insurance-grid">
+        <div class="insurance-card">
+          <div class="insurance-icon">❤️</div>
+          <h3 class="insurance-title">人壽保險</h3>
+          <p class="insurance-desc">保障家人未來，財富傳承規劃</p>
+          <a href="#" class="btn-link">了解計劃 ›</a>
+        </div>
+        <div class="insurance-card">
+          <div class="insurance-icon">🏥</div>
+          <h3 class="insurance-title">醫療保險</h3>
+          <p class="insurance-desc">全面醫療保障，自願醫保計劃</p>
+          <a href="#" class="btn-link">了解計劃 ›</a>
+        </div>
+        <div class="insurance-card">
+          <div class="insurance-icon">✈️</div>
+          <h3 class="insurance-title">旅遊保險</h3>
+          <p class="insurance-desc">全球旅遊保障，旅程無憂</p>
+          <a href="#" class="btn-link">了解計劃 ›</a>
+        </div>
+        <div class="insurance-card">
+          <div class="insurance-icon">📚</div>
+          <h3 class="insurance-title">儲蓄保險</h3>
+          <p class="insurance-desc">長遠儲蓄計劃，穩健回報</p>
+          <a href="#" class="btn-link">了解計劃 ›</a>
+        </div>
+        <div class="insurance-card">
+          <div class="insurance-icon">🎓</div>
+          <h3 class="insurance-title">教育保險</h3>
+          <p class="insurance-desc">為子女教育儲蓄，保障未來</p>
+          <a href="#" class="btn-link">了解計劃 ›</a>
+        </div>
+        <div class="insurance-card">
+          <div class="insurance-icon">👴</div>
+          <h3 class="insurance-title">退休保險</h3>
+          <p class="insurance-desc">退休收入規劃，安享晚年</p>
+          <a href="#" class="btn-link">了解計劃 ›</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 富邦銀行 (香港) 有限公司 版權所有</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../../../../js/main.js"></script>
+</body>
+</html>

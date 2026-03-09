@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>財富管理 | 富邦銀行</title>
+  <meta name="description" content="富邦銀行財富管理服務 - 投資產品、理財規劃、保險服務">
+  <link rel="stylesheet" href="../../../css/main.css">
+  <style>
+    .page-header { position: relative; padding: var(--spacing-20) 0 var(--spacing-10); background: linear-gradient(135deg, #8E8E93 0%, #636366 100%); color: var(--white); text-align: center; overflow: hidden; }
+    .page-header-bg { position: absolute; inset: 0; opacity: 0.15; }
+    .page-header-bg img { width: 100%; height: 100%; object-fit: cover; }
+    .page-header .page-title { font-size: var(--font-title-1); margin-bottom: var(--spacing-4); }
+    .page-header .page-subtitle { font-size: var(--font-headline); opacity: 0.9; max-width: 700px; margin: 0 auto; }
+    .category-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-8); padding: var(--spacing-12) 0; }
+    .category-card { background: var(--white); border-radius: var(--radius-2xl); padding: var(--spacing-10); box-shadow: var(--shadow-md); transition: all var(--transition-normal); text-decoration: none; color: var(--black); display: block; }
+    .category-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); }
+    .category-icon { width: 72px; height: 72px; border-radius: var(--radius-xl); background: linear-gradient(135deg, #8E8E93 0%, #636366 100%); display: flex; align-items: center; justify-content: center; font-size: 36px; margin-bottom: var(--spacing-6); color: white; }
+    .category-title { font-size: var(--font-title-3); font-weight: var(--font-weight-semibold); margin-bottom: var(--spacing-3); }
+    .category-desc { font-size: var(--font-callout); color: var(--gray-primary); margin-bottom: var(--spacing-5); }
+    @media (max-width: 1023px) { .category-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 734px) { .category-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../../../" class="navbar-logo">
+        <img src="../../../images/logo/fubon-logo.svg" alt="富邦銀行" height="40">
+        <span>富邦銀行</span>
+      </a>
+      <div class="navbar-menu">
+        <a href="../../personal/" class="navbar-link">個人銀行</a>
+        <a href="../../commercial/" class="navbar-link">商業銀行</a>
+        <a href="../" class="navbar-link" style="opacity:1;color:var(--fubon-orange)">財富管理</a>
+        <a href="../../ebanking/" class="navbar-link">電子銀行</a>
+        <a href="../../about/" class="navbar-link">關於我們</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="#" class="btn btn-primary btn-small">網上銀行</a>
+        <button class="navbar-toggle" aria-label="選單"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="page-header-bg">
+      <img src="../../../images/hero/business-meeting.jpg" alt="財富管理" loading="lazy">
+    </div>
+    <div class="container">
+      <h1 class="page-title">財富管理</h1>
+      <p class="page-subtitle">專業理財顧問服務，助您達成財富目標。由投資規劃到退休策劃，我們為您提供全面的財富管理方案。</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="category-grid">
+        <a href="products/" class="category-card">
+          <div class="category-icon">📊</div>
+          <h2 class="category-title">投資產品</h2>
+          <p class="category-desc">股票、基金、債券、結構性產品，多元化的投資選擇配合您的風險偏好。</p>
+          <span class="btn-link">了解更多 ›</span>
+        </a>
+        <a href="planning/" class="category-card">
+          <div class="category-icon">🎯</div>
+          <h2 class="category-title">理財規劃</h2>
+          <p class="category-desc">退休規劃、教育儲蓄、財富傳承，專業顧問為您量身打造理財方案。</p>
+          <span class="btn-link">了解更多 ›</span>
+        </a>
+        <a href="insurance/" class="category-card">
+          <div class="category-icon">🛡️</div>
+          <h2 class="category-title">保險產品</h2>
+          <p class="category-desc">人壽保險、儲蓄保險、投資相連保險，全面保障您的財富和未來。</p>
+          <span class="btn-link">了解更多 ›</span>
+        </a>
+        <a href="private-banking/" class="category-card">
+          <div class="category-icon">👑</div>
+          <h2 class="category-title">私人銀行</h2>
+          <p class="category-desc">為高淨值客戶提供度身訂造的財富管理方案和專屬服務。</p>
+          <span class="btn-link">了解更多 ›</span>
+        </a>
+        <a href="market-insights/" class="category-card">
+          <div class="category-icon">💡</div>
+          <h2 class="category-title">市場洞察</h2>
+          <p class="category-desc">最新市場分析、投資策略、經濟展望，助您掌握投資先機。</p>
+          <span class="btn-link">了解更多 ›</span>
+        </a>
+        <a href="consultation/" class="category-card">
+          <div class="category-icon">👨‍💼</div>
+          <h2 class="category-title">預約顧問</h2>
+          <p class="category-desc">預約專業理財顧問，一對一諮詢服務，解答您的投資疑難。</p>
+          <span class="btn-link">立即預約 ›</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 富邦銀行 (香港) 有限公司 版權所有</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../../../js/main.js"></script>
+</body>
+</html>

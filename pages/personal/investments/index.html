@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>投資服務 | 富邦銀行</title>
+  <link rel="stylesheet" href="../../../../css/main.css">
+  <style>
+    .page-header { position: relative; padding: var(--spacing-15) 0 var(--spacing-10); background: linear-gradient(135deg, #007AFF 0%, #5AC8FA 100%); color: var(--white); text-align: center; overflow: hidden; }
+    .page-header-bg { position: absolute; inset: 0; opacity: 0.15; }
+    .page-header-bg img { width: 100%; height: 100%; object-fit: cover; }
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-8); padding: var(--spacing-12) 0; }
+    .service-card { background: var(--white); border-radius: var(--radius-2xl); padding: var(--spacing-10); box-shadow: var(--shadow-md); transition: all var(--transition-normal); }
+    .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
+    .service-icon { width: 64px; height: 64px; border-radius: var(--radius-xl); background: linear-gradient(135deg, #007AFF 0%, #5AC8FA 100%); display: flex; align-items: center; justify-content: center; font-size: 32px; margin-bottom: var(--spacing-6); }
+    .service-title { font-size: var(--font-title-3); font-weight: var(--font-weight-bold); margin-bottom: var(--spacing-3); }
+    .service-desc { font-size: var(--font-callout); color: var(--gray-primary); margin-bottom: var(--spacing-6); }
+    @media (max-width: 1023px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 734px) { .service-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../../../../" class="navbar-logo">
+        <img src="../../../../images/logo/fubon-logo.svg" alt="富邦銀行" height="40">
+        <span>富邦銀行</span>
+      </a>
+      <div class="navbar-menu">
+        <a href="../../../" class="navbar-link" style="opacity:1;color:var(--fubon-orange)">個人銀行</a>
+        <a href="../../commercial/" class="navbar-link">商業銀行</a>
+        <a href="../../wealth/" class="navbar-link">財富管理</a>
+        <a href="../../ebanking/" class="navbar-link">電子銀行</a>
+        <a href="../../about/" class="navbar-link">關於我們</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="#" class="btn btn-primary btn-small">網上銀行</a>
+        <button class="navbar-toggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="page-header-bg">
+      <img src="../../../../images/products/investment.jpg" alt="投資服務" loading="lazy">
+    </div>
+    <div class="container">
+      <h1 class="page-title">投資服務</h1>
+      <p class="page-subtitle">多元化投資產品，專業顧問服務</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-icon">📈</div>
+          <h3 class="service-title">股票交易</h3>
+          <p class="service-desc">港股、美股、A 股通，全球市場投資</p>
+          <p style="font-size:var(--font-callout);color:var(--gray-primary);margin:var(--spacing-4) 0">佣金低至 0.08%</p>
+          <a href="#" class="btn-link">開始投資 ›</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💼</div>
+          <h3 class="service-title">基金投資</h3>
+          <p class="service-desc">超過 500 隻基金選擇，分散投資風險</p>
+          <p style="font-size:var(--font-callout);color:var(--gray-primary);margin:var(--spacing-4) 0">每月投資計劃</p>
+          <a href="#" class="btn-link">了解詳情 ›</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3 class="service-title">債券投資</h3>
+          <p class="service-desc">政府債券、企業債券，穩定收益選擇</p>
+          <p style="font-size:var(--font-callout);color:var(--gray-primary);margin:var(--spacing-4) 0">年期 1-10 年</p>
+          <a href="#" class="btn-link">了解詳情 ›</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">💱</div>
+          <h3 class="service-title">外匯投資</h3>
+          <p class="service-desc">多種貨幣兌換，外匯投資產品</p>
+          <p style="font-size:var(--font-callout);color:var(--gray-primary);margin:var(--spacing-4) 0">即時匯率</p>
+          <a href="#" class="btn-link">了解詳情 ›</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏆</div>
+          <h3 class="service-title">結構性產品</h3>
+          <p class="service-desc">股票掛鉤票據、保本產品</p>
+          <p style="font-size:var(--font-callout);color:var(--gray-primary);margin:var(--spacing-4) 0">保本高達 100%</p>
+          <a href="#" class="btn-link">了解詳情 ›</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">👨‍💼</div>
+          <h3 class="service-title">投資顧問</h3>
+          <p class="service-desc">專業投資顧問，量身打造投資組合</p>
+          <p style="font-size:var(--font-callout);color:var(--gray-primary);margin:var(--spacing-4) 0">免費諮詢</p>
+          <a href="#" class="btn-link">預約顧問 ›</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 富邦銀行 (香港) 有限公司 版權所有</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../../../../js/main.js"></script>
+</body>
+</html>

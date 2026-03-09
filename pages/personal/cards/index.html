@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>信用卡 | 富邦銀行</title>
+  <link rel="stylesheet" href="../../../../css/main.css">
+  <style>
+    .page-header { position: relative; padding: var(--spacing-15) 0 var(--spacing-10); background: linear-gradient(135deg, #FF3B30 0%, #FF6B35 100%); color: var(--white); text-align: center; overflow: hidden; }
+    .page-header-bg { position: absolute; inset: 0; opacity: 0.15; }
+    .page-header-bg img { width: 100%; height: 100%; object-fit: cover; }
+    .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-8); padding: var(--spacing-12) 0; }
+    .card-product { background: var(--white); border-radius: var(--radius-2xl); overflow: hidden; box-shadow: var(--shadow-md); transition: all var(--transition-normal); }
+    .card-product:hover { transform: translateY(-8px); box-shadow: var(--shadow-xl); }
+    .card-image { height: 200px; background: linear-gradient(135deg, #1D1D1F 0%, #4A4A4C 100%); display: flex; align-items: center; justify-content: center; font-size: 80px; }
+    .card-content { padding: var(--spacing-8); }
+    .card-name { font-size: var(--font-title-3); font-weight: var(--font-weight-bold); margin-bottom: var(--spacing-3); }
+    .card-desc { font-size: var(--font-callout); color: var(--gray-primary); margin-bottom: var(--spacing-5); }
+    .card-features { list-style: none; margin-bottom: var(--spacing-6); }
+    .card-features li { padding: var(--spacing-2) 0; font-size: var(--font-callout); color: var(--gray-primary); display: flex; align-items: center; gap: var(--spacing-3); }
+    .card-features li::before { content: "✓"; color: var(--success); font-weight: bold; }
+    @media (max-width: 1023px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 734px) { .card-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../../../../" class="navbar-logo">
+        <img src="../../../../images/logo/fubon-logo.svg" alt="富邦銀行" height="40">
+        <span>富邦銀行</span>
+      </a>
+      <div class="navbar-menu">
+        <a href="../../../" class="navbar-link" style="opacity:1;color:var(--fubon-orange)">個人銀行</a>
+        <a href="../../commercial/" class="navbar-link">商業銀行</a>
+        <a href="../../wealth/" class="navbar-link">財富管理</a>
+        <a href="../../ebanking/" class="navbar-link">電子銀行</a>
+        <a href="../../about/" class="navbar-link">關於我們</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="#" class="btn btn-primary btn-small">網上銀行</a>
+        <button class="navbar-toggle"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="page-header-bg">
+      <img src="../../../../images/products/credit-card.jpg" alt="信用卡" loading="lazy">
+    </div>
+    <div class="container">
+      <h1 class="page-title">信用卡</h1>
+      <p class="page-subtitle">多款信用卡選擇，豐富簽賬獎賞及獨家優惠</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="card-grid">
+        <div class="card-product">
+          <div class="card-image">💳</div>
+          <div class="card-content">
+            <h3 class="card-name">富邦尊尚信用卡</h3>
+            <p class="card-desc">頂級信用卡，尊享無限禮遇</p>
+            <ul class="card-features">
+              <li>HK$1 = 1 里</li>
+              <li>免費機場貴賓室</li>
+              <li>旅遊保險</li>
+              <li>24 小時禮賓服務</li>
+            </ul>
+            <a href="#" class="btn btn-primary">立即申請</a>
+          </div>
+        </div>
+        <div class="card-product">
+          <div class="card-image">🛍️</div>
+          <div class="card-content">
+            <h3 class="card-name">富邦購物信用卡</h3>
+            <p class="card-desc">購物簽賬，盡享現金回贈</p>
+            <ul class="card-features">
+              <li>本地簽賬 1.5% 現金回贈</li>
+              <li>網上購物 2% 現金回贈</li>
+              <li>指定商戶額外獎賞</li>
+              <li>免年費</li>
+            </ul>
+            <a href="#" class="btn btn-primary">立即申請</a>
+          </div>
+        </div>
+        <div class="card-product">
+          <div class="card-image">✈️</div>
+          <div class="card-content">
+            <h3 class="card-name">富邦旅遊信用卡</h3>
+            <p class="card-desc">旅遊簽賬，賺取飛行里數</p>
+            <ul class="card-features">
+              <li>HK$6 = 1 里</li>
+              <li>免費旅遊保險</li>
+              <li>行李延誤保障</li>
+              <li>機場接送服務</li>
+            </ul>
+            <a href="#" class="btn btn-primary">立即申請</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 富邦銀行 (香港) 有限公司 版權所有</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../../../../js/main.js"></script>
+</body>
+</html>
